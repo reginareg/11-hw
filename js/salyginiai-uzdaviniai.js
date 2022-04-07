@@ -5,7 +5,7 @@ Skaičius geras
 */
 let n = 20;
 
-if (n > 0) {
+if (n >= 0) {
     console.log ('Geras');
 } else {
     console.log ('Blogas');
@@ -87,8 +87,8 @@ lygiakraštį trikampį. Dėliojamai figūrai turi būti panaudoti visi degtukai
 negalima. Pasitikrinkite: jei n = 6, turi būti: Trikampį sudėlioti galima. jei n = 4, turi būti: 
 Trikampį sudėlioti negalima.
 */
-let degtukai = 5
-if (degtukai === 6 && degtukai > 0) {
+let degtukai = 6
+if (degtukai % 3 === 0  && degtukai > 0) {
    console.log('Trikampį sudėlioti galima');
 } else {
     console.log('Trikampį sudėlioti negalima');
@@ -131,9 +131,8 @@ spausdinama: Metai neolimpiniai.
 */
 const metai = 1904;
 
-const zaidynes = 1 + ((metai - 1896) / 4);
 if (metai % 4 === 0) {
-    
+    const zaidynes = 1 + ((metai - 1896) / 4);
     console.log(`${metai} metais ivyko ${zaidynes}os rungtynes.`);
 } else {
     console.log('Metai neolimpiniai');
